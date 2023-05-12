@@ -1,0 +1,38 @@
+$red: red;
+$green: green;
+$blue: blue;
+$coral: coral;
+$gray: gray;
+$white: white;
+$black: black;
+$bg: $gray;
+body {
+    background: $bg;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    transition: all 300ms ease-in;
+}
+h1 {
+    color: $red;
+}
+h2 {
+    color: $green;
+}
+h3 {
+    color: $blue;
+}
+h4 {
+    color: $coral;
+}
+h5 {
+    color: $white;
+}
+h6 {
+    color: $black;
+}
