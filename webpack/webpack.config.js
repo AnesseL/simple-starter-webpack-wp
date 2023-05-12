@@ -6,5 +6,36 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './'),
     filename: 'bundle.js',
-  }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          {
+           // Creates `style` nodes from JS strings (plugin instead of "style-loader")
+            // loader: MiniCssExtractPlugin.loader,
+            loader: 'style-loader',
+            options: {}
+          },
+          {
+            // Translates CSS into CommonJS
+            loader: 'css-loader',
+            options: {}
+          },
+          {
+            // Compiles Sass to CSS
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'), // Prefer `dart-sass`
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
