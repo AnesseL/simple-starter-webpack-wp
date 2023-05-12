@@ -1,0 +1,28 @@
+{
+  "name": "simple-starter-webpack-wp",
+  "version": "1.0.0",
+  "description": "Simple starter Webpack 5 for WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnesseL/simple-starter-webpack-wp.git"
+  },
+  "keywords": [
+    "webpack",
+    "javascript",
+    "js",
+    "css",
+    "sass",
+    "scss",
+    "wordpress"
+  ],
+  "author": "Agnieszka Leśków",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnesseL/simple-starter-webpack-wp/issues"
+  },
+  "homepage": "https://github.com/AnesseL/simple-starter-webpack-wp#readme"
+}
