@@ -4,7 +4,9 @@
   "description": "Simple starter Webpack 5 for WordPress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack",
+    "watch": "webpack -- --watch",
+    "prod": "webpack -- --mode production"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/AnesseL/simple-starter-webpack-wp/issues"
   },
-  "homepage": "https://github.com/AnesseL/simple-starter-webpack-wp#readme"
+  "homepage": "https://github.com/AnesseL/simple-starter-webpack-wp#readme",
+  "devDependencies": {
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  }
 }
