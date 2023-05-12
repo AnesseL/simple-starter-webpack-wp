@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 module.exports = {
@@ -10,8 +11,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.css$/i, //MiniCssExtractPlugin.loader zamiast "style-loader"
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.s[ac]ss$/i,
@@ -19,7 +20,7 @@ module.exports = {
           {
            // Creates `style` nodes from JS strings (plugin instead of "style-loader")
             // loader: MiniCssExtractPlugin.loader,
-            loader: 'style-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {}
           },
           {
@@ -38,4 +39,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+        filename: "../css_webpack/[name].css",
+    }),
+  ]
 };
