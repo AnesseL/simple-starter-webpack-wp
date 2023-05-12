@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack",
     "watch": "webpack -- --watch",
-    "prod": "webpack -- --mode production"
+    "prod": "webpack --config ./webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "mini-css-extract-plugin": "^2.7.5",
     "postcss": "^8.4.23",
     "postcss-loader": "^7.3.0",
