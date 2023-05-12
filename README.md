@@ -58,7 +58,7 @@ https://github.com/AnesseL/simple-starter-webpack-wp
 Code > Download ZIP > Extract files
 
 ```bash
-code . [comment]: # (for Visual Studio Code )
+code . [comment]: # (for Visual Studio Code ) <!-- for Visual Studio Code -->
 ```
 We download from remote server a motive for CMS WordPress, which we want to change or fix. 
 
