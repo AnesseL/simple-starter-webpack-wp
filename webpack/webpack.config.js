@@ -35,6 +35,18 @@ module.exports = {
               implementation: require('sass'), // Prefer `dart-sass`
             },
           },
+          {
+            loader: "postcss-loader",
+            options: {
+                postcssOptions: {
+                    plugins: [
+                        [
+                            "autoprefixer",
+                        ],
+                    ],
+                },
+            },
+          },
         ],
       },
     ],
